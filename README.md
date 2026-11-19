@@ -59,12 +59,12 @@ commits desde la cuenta de cada quien.
 
 ## Aportes de cada integrante
 
-> Cada integrante escribe **su propia línea** en un PR desde su cuenta.
+> Cada integrante escribe **su nombre y su propia línea** en un PR desde su cuenta.
 
 | Integrante | Usuario | Aporte |
 |---|---|---|
-| Nicolás Gaviria | @ngcddev | Repositorio, flujo de trabajo, entorno Docker (Ollama + Open WebUI), prueba por API, integración del informe |
-| _Integrante 2_ | | Servicio propuesto, base de conocimiento y estrategia de corte |
-| _Integrante 3_ | | Modelo personalizado, system prompt, políticas e hiperparámetros |
-| _Integrante 4_ | | Golden dataset |
-| _Integrante 5_ | | Evaluación de las pruebas, métricas y análisis de resultados |
+| Integrante 1 · Nicolás Gaviria | @ngcddev | Repositorio, flujo de trabajo, entorno Docker (Ollama + Open WebUI), prueba por API, integración del informe |
+| Integrante 2 | @Mesiahs | Servicio propuesto, base de conocimiento y estrategia de corte |
+| Integrante 3 | @sebastianpaja-debug | Modelo personalizado, system prompt, políticas e hiperparámetros |
+| Integrante 4 | @yiselandrea13 | Golden dataset |
+| Integrante 5 | @Andres-Duqu | Evaluación de las pruebas, métricas y análisis de resultados |

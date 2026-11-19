@@ -42,7 +42,7 @@ nota, así que **cada integrante hace sus commits desde su propia cuenta y su pr
    ```
 
    En la descripción del PR escribir `Closes #3`.
-5. Pedir revisión a **otro integrante**. `main` está protegida: sin una aprobación no se fusiona.
+5. Pedir revisión a **@ngcddev** (o a otro integrante). A `main` solo se entra por PR.
 6. Al aprobar, fusionar con **"Create a merge commit"** y borrar la rama.
 
 ## Reglas

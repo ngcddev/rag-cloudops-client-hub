@@ -2,7 +2,7 @@
 
 <!-- Formato del golden dataset y reparto de casos por categoría (punto 4 de la actividad). -->
 
-**Responsable:** Integrante 4.
+**Responsable:** Integrante 4 (@yiselandrea13).
 
 Archivo: `golden_dataset.jsonl`, con un caso por línea y el mismo formato del ejemplo de clase:
 

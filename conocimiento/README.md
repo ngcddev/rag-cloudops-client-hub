@@ -2,7 +2,7 @@
 
 <!-- Qué va en esta carpeta y qué debe documentar el responsable (puntos 1 y 2 de la actividad). -->
 
-**Responsable:** Integrante 2.
+**Responsable:** Integrante 2 (@Mesiahs).
 
 ## Qué va aquí
 
