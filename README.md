@@ -3,7 +3,7 @@
 <!-- README principal del repositorio de la Actividad 2 del Módulo 6 (servicio de IA generativa con RAG). -->
 
 Asistente de **soporte y PQRS** para los clientes de **Forja Digital**, la agencia ficticia del
-proyecto integrador [CloudOps Client Hub](https://github.com/ngcddev). Responde preguntas de las PyMEs
+proyecto integrador [CloudOps Client Hub](https://github.com/ngcddev/CloudOps). Responde preguntas de las PyMEs
 (planes, tiempos de atención, prioridades, estados de una solicitud, qué significa un aviso del
 portal) usando **solo** la base de conocimiento de este repositorio.
 
@@ -54,7 +54,9 @@ _Pendiente: se completa con la corrida final de `evaluacion/` (casos, % de éxit
 
 ## Cómo trabajamos
 
-Ver [CONTRIBUTING.md](CONTRIBUTING.md): una rama y un PR por tarea, revisión de otro integrante y
+Guía paso a paso de cada integrante (con prompt para IA): [`guias/`](guias/README.md).
+
+Ver [CONTRIBUTING.md](CONTRIBUTING.md): una rama y un PR por tarea, revisión del coordinador y
 commits desde la cuenta de cada quien.
 
 ## Aportes de cada integrante
