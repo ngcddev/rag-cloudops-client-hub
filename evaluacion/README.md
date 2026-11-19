@@ -2,7 +2,7 @@
 
 <!-- Qué va en esta carpeta y qué debe medir el responsable (punto 5 de la actividad). -->
 
-**Responsable:** Integrante 5.
+**Responsable:** Integrante 5 (@Andres-Duqu).
 
 ## Qué va aquí
 

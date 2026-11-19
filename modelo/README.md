@@ -2,7 +2,7 @@
 
 <!-- Qué va en esta carpeta y qué debe documentar el responsable (punto 3 de la actividad). -->
 
-**Responsable:** Integrante 3.
+**Responsable:** Integrante 3 (@sebastianpaja-debug).
 
 ## Qué va aquí
 
