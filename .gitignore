@@ -1,0 +1,9 @@
+# Archivos que no se suben: secretos, entornos virtuales y cachés.
+.env
+.venv/
+.venv-webui/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+~$*.docx

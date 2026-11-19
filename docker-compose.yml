@@ -1,0 +1,29 @@
+# Entorno local del asistente RAG: Ollama (modelos) y Open WebUI (RAG, modelo personalizado y API).
+services:
+  ollama:
+    image: ollama/ollama:0.6.8
+    container_name: ollama-rag-cloudops
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+  open-webui:
+    # Versión fijada: la recomendada por el docente porque :main falla con frecuencia.
+    image: ghcr.io/open-webui/open-webui:v0.5.20
+    container_name: open-webui-rag-cloudops
+    ports:
+      - "3000:8080"
+    environment:
+      - OLLAMA_BASE_URL=http://ollama-rag-cloudops:11434
+      - WEBUI_AUTH=true
+    volumes:
+      - open-webui_data:/app/backend/data
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+  open-webui_data:
