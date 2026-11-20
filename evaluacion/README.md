@@ -23,3 +23,13 @@ RUN_TAG=v2_chunk400_ov40 python evaluacion/evaluate_rag.py
 
 Si la primera corrida no llega al 70 %, ajustar el corte, el prompt o las palabras clave, volver
 a correr y documentar qué cambió. Esa comparación también va en el informe.
+
+## Estado de la tarea
+
+- [x] Script adaptado: `evaluate_rag.py`.
+- [ ] Corrida final del golden dataset.
+- [ ] Documento `resultados.md`.
+- [ ] Análisis F.3 del informe.
+- [ ] PR de la tarea.
+
+Responsable: Integrante 5, Andrés Felipe (`@Andres-Duqu`).

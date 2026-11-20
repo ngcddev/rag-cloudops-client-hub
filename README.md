@@ -51,7 +51,8 @@ python evaluacion/evaluate_rag.py     # corre el golden dataset
 
 ## Resultados
 
-_Pendiente: se completa con la corrida final de `evaluacion/` (casos, % de éxito, % de error, latencia y puntaje del juez)._
+La adaptacion del script de evaluacion esta completa. La corrida final esta pendiente hasta disponer
+de una API key activa y del modelo `asistente-soporte-forja` desplegado en Open WebUI.
 
 ## Cómo trabajamos
 
