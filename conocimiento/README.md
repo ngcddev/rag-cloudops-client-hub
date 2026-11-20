@@ -16,7 +16,7 @@
 
 Todos los datos son ficticios. Reescribir en lenguaje de cliente siguiendo el glosario, sin
 nombres técnicos internos (Pod, namespace, clúster):
- 
+
 | Documento propuesto | Fuente en el repo del proyecto |
 |---|---|
 | `planes-y-horarios.md` | README → "Agencia, clientes y planes" |
