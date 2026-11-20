@@ -5,11 +5,11 @@
 **Tu parte:** coordinar y revisar los PR, hacer las pruebas por API, armar el informe y entregar.
 El repositorio, el entorno Docker y el script de API ya están hechos.
 
-## Durante la semana
+## Durante el día
 
 - Revisar y fusionar los PR del equipo (*Merge pull request → Create a merge commit*).
 - Seguir el orden: **la base de Mesiahs es el cuello de botella**. Si se atrasa, todos esperan.
-- Cada uno debe tener **varios commits propios**. Revisar *Insights → Contributors* a mitad de semana.
+- Cada uno debe tener **varios commits propios**. Revisar *Insights → Contributors* a la hora 3 del cronograma.
 
 ## Issue #8 · Pruebas por API e interfaz (cuando exista el modelo)
 

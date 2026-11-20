@@ -22,7 +22,7 @@ Una línea de texto con 5 datos:
 | `expected_answer` | "Debe…" y qué tiene que decir o hacer el asistente |
 | `required_keywords` | 1 o 2 palabras que **sí o sí** deben salir en la respuesta (cortas y exactas) |
 
-## Paso 1 · Leer la información (30 min)
+## Paso 1 · Leer la información (15 min)
 
 Todo lo que el asistente sabe está en la base de conocimiento. Mientras Mesiahs la termina, puedes
 empezar con estas fuentes:
@@ -65,7 +65,7 @@ Consejos:
    → nombre `feat/5-golden-dataset` → **Propose changes** → en la descripción escribe `Closes #5` y
    crea el PR.
 5. Para agregar más casos después: abre el archivo **en tu rama**, dale al lápiz, agrega y haz
-   commit en la misma rama. **Sube por partes** (por ejemplo 15 hoy, 15 mañana…): cada commit
+   commit en la misma rama. **Sube por partes** (por ejemplo de 10 en 10 durante la tarde): cada commit
    cuenta como aporte tuyo.
 
 Andrés va a correr tus casos con su script. Si alguna línea tiene un error de formato, te dice cuál
