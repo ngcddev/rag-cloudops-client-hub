@@ -69,5 +69,5 @@ commits desde la cuenta de cada quien.
 | Integrante 1 · Nicolás Gaviria | @ngcddev | Repositorio, flujo de trabajo, entorno Docker (Ollama + Open WebUI), prueba por API, integración del informe |
 | Integrante 2 | @Mesiahs | Servicio propuesto, base de conocimiento y estrategia de corte |
 | Integrante 3 | @sebastianpaja-debug | Modelo personalizado, system prompt, políticas e hiperparámetros |
-| Integrante 4 | @yiselandrea13 | Golden dataset |
+| Integrante 4 · Yisel | @yiselandrea13 | Golden dataset de 50 casos en 8 categorías (planes, SLA, estados, glosario, PQRS, fuera de alcance, sin información y seguridad), verificado contra la base de conocimiento; sección F.2 del informe |
 | Integrante 5 | @Andres-Duqu | Evaluación de las pruebas, métricas y análisis de resultados |
