@@ -25,6 +25,22 @@
 | num_ctx | 4096 | Cabe el prompt, 4 trozos de 500 tokens y la pregunta |
 | max_tokens | 400 | Las respuestas son de 150 palabras como máximo; deja margen y evita divagar |
 
+## Plantilla RAG
+
+Open WebUI inserta el contexto recuperado con una plantilla (*Admin → Ajustes → Documentos*). La que
+trae por defecto pide citas `[1]` y permite responder con conocimiento propio, lo que contradice la
+política 1 y confundía al modelo de 3B. Se usa esta, más corta y en español:
+
+```text
+Use el siguiente contexto de la base de conocimiento para responder al cliente. No escriba números entre corchetes ni cite fuentes.
+
+<context>
+{{CONTEXT}}
+</context>
+
+Pregunta del cliente: {{QUERY}}
+```
+
 ## Versiones del prompt
 
 | Versión | Cambio | Resultado en la evaluación |
