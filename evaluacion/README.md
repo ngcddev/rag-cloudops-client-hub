@@ -30,6 +30,6 @@ a correr y documentar qué cambió. Esa comparación también va en el informe.
 - [x] Corrida final del golden dataset: 50 casos, 70 % de éxito.
 - [x] Documento `resultados.md`.
 - [x] Análisis F.3 del informe.
-- [ ] PR de la tarea.
+- [x] PR de la tarea: https://github.com/ngcddev/rag-cloudops-client-hub/pull/23
 
 Responsable: Integrante 5, Andrés Felipe (`@Andres-Duqu`).

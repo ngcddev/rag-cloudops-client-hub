@@ -77,7 +77,7 @@ corridas. Actualiza también la sección "Resultados" del README principal.
 - [x] `evaluate_rag.py` adaptado en la rama `integrante-5-andres.md`
 - [x] Corrida de 50 casos en `runs/` con eficiencia de 70 % exactos
 - [x] `resultados.md`, sección Resultados del README y sección F.3 del informe
-- [ ] PR final de todas las tareas
+- [x] PR final de todas las tareas: https://github.com/ngcddev/rag-cloudops-client-hub/pull/23
 
 Trabajo realizado por Integrante 5 · Andrés Felipe (@Andres-Duqu).
 
