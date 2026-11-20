@@ -18,10 +18,10 @@ Se necesita ofrecer a los clientes PyME una forma rápida de consultar informaci
 
 Se propone un asistente de soporte y PQRS basado en recuperación de información (RAG), con una base de conocimiento elaborada a partir de los documentos del proyecto. El asistente orienta a los dueños y empleados de las PyMEs sobre planes y horarios, tiempos de respuesta y solución, estados de casos, avisos del portal y el proceso de PQRS.
 
-El asistente informa y orienta; no reemplaza al equipo técnico ni realiza cambios en los sitios. Quedan fuera de alcance los datos de otros clientes, precios no publicados, cambios técnicos y asuntos ajenos a la agencia. La política de PQRS incluye plazos y canales propuestos que requieren aprobación antes de considerarse compromisos oficiales.
+El asistente informa y orienta; no reemplaza al equipo técnico ni realiza cambios en los sitios. Quedan fuera de alcance los datos de otros clientes, precios no publicados, cambios técnicos y asuntos ajenos a la agencia.
 
 ## Evidencia del problema atendido
 
-La captura de la base de conocimiento muestra los seis documentos de consulta cargados en Open WebUI. Su nombre visible es `rag-cloudops` y la captura no permite confirmar la visibilidad configurada.
+La base de conocimiento reúne en seis documentos la información que hoy el cliente tendría que pedirle a un técnico: planes, tiempos, estados, avisos del portal y PQRS.
 
 ![Base de conocimiento cargada en Open WebUI](../../evidencias/interfaz/01-base-de-conocimiento.png)
