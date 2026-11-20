@@ -45,7 +45,8 @@ Pregunta del cliente: {{QUERY}}
 
 | Versión | Cambio | Resultado en la evaluación |
 |---|---|---|
-| v1 | Prompt inicial con 8 políticas | Pendiente de la primera corrida |
+| v1 | Prompt inicial con 8 políticas | Cumple seguridad y alcance; falla en datos concretos (por ejemplo, el horario del Premium) |
+| v2 (descartada) | v1 más una regla para no mezclar planes y un rechazo fijo fuera de tema | No mejoró los datos y añadió un rechazo innecesario a la falla crítica |
 
 Si la evaluación (Integrante 5) encuentra fallas, se ajusta el prompt como v2, se anota aquí y se
 vuelve a correr. La comparación v1 contra v2 va en el informe.
