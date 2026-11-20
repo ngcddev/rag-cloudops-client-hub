@@ -4,9 +4,9 @@
 
 **Tu parte:** el servicio propuesto, los documentos de la base de conocimiento y la estrategia de
 corte. **Vas primero:** el modelo, el golden dataset y la evaluación dependen de tus documentos.
-Meta: documentos en `main` en 2 días.
+Meta: **documentos en `main` a la hora 2 del cronograma** (ver `guias/README.md`).
 
-## Paso 1 · Servicio propuesto (30 min)
+## Paso 1 · Servicio propuesto (15 min)
 
 Crear `conocimiento/servicio-propuesto.md` con:
 
@@ -18,7 +18,7 @@ Crear `conocimiento/servicio-propuesto.md` con:
 - **Fuera de alcance:** datos de otros clientes, precios no publicados, cambios técnicos en el
   sitio y temas ajenos a la agencia.
 
-## Paso 2 · Documentos de la base (1 a 2 días)
+## Paso 2 · Documentos de la base (1 h 30 min, con IA)
 
 Fuentes en el repo del proyecto (público):
 
