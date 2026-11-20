@@ -27,7 +27,7 @@ Estructura recomendada:
 
 ## Paso 2 · Crear el modelo (cuando esté la base)
 
-1. Levantar el entorno (ver `guias/README.md`) y cargar la base según la guía de Mesiahs (pasos 3 y 4).
+1. Levantar el entorno (ver `guias/README.md`) y configurar el corte y los embeddings **exactamente** como en `conocimiento/estrategia-de-corte.md`; luego cargar los documentos.
 2. *Workspace → Models → +*:
    - **Name:** `Asistente Soporte Forja` · **ID:** `asistente-soporte-forja` (debe ser exacto: lo usan los scripts).
    - **Base model:** `qwen2.5:3b-instruct`.
