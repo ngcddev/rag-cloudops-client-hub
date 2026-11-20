@@ -51,8 +51,14 @@ python evaluacion/evaluate_rag.py     # corre el golden dataset
 
 ## Resultados
 
-La adaptacion del script de evaluacion esta completa. La corrida final esta pendiente hasta disponer
-de una API key activa y del modelo `asistente-soporte-forja` desplegado en Open WebUI.
+La primera corrida válida ejecutó 50 casos con el modelo `asistente-soporte-forja` y el juez
+`qwen2.5:7b-instruct`: **70.00 % de éxito**, **30.00 % de error**, 24 casos aprobados por palabras
+clave y promedio del juez de **3.16**. La latencia promedio fue **4.195 s** y la mediana
+**2.655 s**.
+
+La documentación completa y las métricas por categoría están en
+[`evaluacion/resultados.md`](evaluacion/resultados.md). Los archivos JSONL y JSON de las corridas
+quedan en [`evaluacion/runs/`](evaluacion/runs/).
 
 ## Cómo trabajamos
 

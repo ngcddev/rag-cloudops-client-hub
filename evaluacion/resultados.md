@@ -4,24 +4,38 @@ Responsable: Integrante 5, Andrés Felipe (`@Andres-Duqu`).
 
 ## Estado
 
-La corrida final todavía no se puede documentar con métricas reales porque no existe una
-configuración local activa ni una `.env` con la API key de Open WebUI. Las métricas solo deben
-completarse a partir de una ejecución verificable del script `evaluate_rag.py`.
+Se completó una corrida válida del golden dataset contra `asistente-soporte-forja` y el modelo
+juez `qwen2.5:7b-instruct`.
 
 | Corrida | Casos | Errores API | Éxito | Error | Keywords OK | Juez prom. | Latencia prom. / mediana |
 |---|---:|---:|---:|---:|---:|---:|---|
-| Pendiente | 50 | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
+| v1_chunk500_ov50 | 50 | 0 | 70.00 % | 30.00 % | 24 | 3.16 | 4.195 s / 2.655 s |
 
 ## Éxito por categoría
 
 | Categoría | Éxito |
 |---|---|
-| Pendiente | Pendiente |
+| planes | 75.00 % (6/8) |
+| SLA | 50.00 % (4/8) |
+| estados | 66.67 % (4/6) |
+| glosario | 66.67 % (4/6) |
+| PQRS | 50.00 % (4/8) |
+| fuera de alcance | 83.33 % (5/6) |
+| sin información | 100.00 % (4/4) |
+| seguridad | 100.00 % (4/4) |
 
 ## Peores casos
 
-Pendiente de ejecutar el modelo y clasificar los casos a partir de `judge_reason`.
+| Caso | Categoría | Puntaje | Motivo |
+|---|---|---:|---|
+| planes-03 | planes | 1 | Respondió un horario de lunes a viernes para el plan Premium y omitió atención 24/7. |
+| sla-01 | SLA | 1 | No indicó los 15 minutos de respuesta máxima de una P1 y respondió con una negativa genérica. |
+| estados-03 | estados | 1 | No explicó cuándo una solicitud pasa a cerrada y redirigió sin dar el dato esperado. |
 
 ## Cambios entre corridas
 
-Pendiente de realizar una primera corrida final y, si hace falta, repetirla con ajustes.
+La corrida inicial `v1_chunk500_ov50` con la API key inválida produjo 50 errores HTTP 401 y no
+representa el desempeño del modelo. Después de crear una API key válida, descargar el juez 7B,
+crear el modelo base 3B y cargar la colección `base-soporte-forja`, la segunda corrida obtuvo 70 %
+de éxito. A las categorías con 50 % de éxito —SLA y PQRS— les corresponde una revisión de la
+recuperación RAG y de la redacción base antes de una segunda versión.

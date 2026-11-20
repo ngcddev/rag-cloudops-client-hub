@@ -75,10 +75,11 @@ corridas. Actualiza también la sección "Resultados" del README principal.
 ## Terminado cuando
 
 - [x] `evaluate_rag.py` adaptado en la rama `integrante-5-andres.md`
-- [ ] Corrida de 50 o más casos en `runs/` con eficiencia de 70 % o más
-- [ ] `resultados.md`, sección Resultados del README y sección F.3 del informe
+- [x] Corrida de 50 casos en `runs/` con eficiencia de 70 % exactos
+- [x] `resultados.md`, sección Resultados del README y sección F.3 del informe
+- [ ] PR final de todas las tareas
 
-Hecho por Integrante 5 · Andrés Felipe (@Andres-Duqu).
+Trabajo realizado por Integrante 5 · Andrés Felipe (@Andres-Duqu).
 
 ## Prompt para tu IA
 
