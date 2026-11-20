@@ -34,12 +34,13 @@ cp .env.example .env              # luego pegar la API key de Open WebUI
 docker compose up -d              # Ollama en :11434 y Open WebUI en :3000
 docker exec -it ollama-rag-cloudops ollama pull qwen2.5:3b-instruct
 docker exec -it ollama-rag-cloudops ollama pull qwen2.5:7b-instruct   # modelo juez
+docker exec -it ollama-rag-cloudops ollama pull bge-m3                # embeddings
 pip install -r requirements.txt
 ```
 
 1. Abrir http://localhost:3000 y crear el usuario administrador.
 2. *Workspace → Knowledge*: crear la base con los archivos de `conocimiento/documentos/`, en visibilidad **Public**.
-3. *Admin → Settings → Documents*: fijar el tamaño de corte y el solapamiento de [`conocimiento/estrategia-de-corte.md`](conocimiento/estrategia-de-corte.md).
+3. *Admin → Settings → Documents*: fijar corte, solapamiento, top-k y embeddings (`bge-m3`) de [`conocimiento/estrategia-de-corte.md`](conocimiento/estrategia-de-corte.md).
 4. *Workspace → Models*: crear el modelo personalizado con [`modelo/system-prompt.md`](modelo/system-prompt.md) y los parámetros de [`modelo/configuracion.md`](modelo/configuracion.md), en visibilidad **Public**.
 5. *Settings → Account → API Keys*: crear la key y pegarla en `.env`.
 
