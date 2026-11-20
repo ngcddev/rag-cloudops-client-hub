@@ -25,15 +25,32 @@
 | num_ctx | 4096 | Cabe el prompt, 4 trozos de 500 tokens y la pregunta |
 | max_tokens | 400 | Las respuestas son de 150 palabras como máximo; deja margen y evita divagar |
 
+## Plantilla RAG
+
+Open WebUI inserta el contexto recuperado con una plantilla (*Admin → Ajustes → Documentos*). La que
+trae por defecto pide citas `[1]` y permite responder con conocimiento propio, lo que contradice la
+política 1 y confundía al modelo de 3B. Se usa esta, más corta y en español:
+
+```text
+Use el siguiente contexto de la base de conocimiento para responder al cliente. No escriba números entre corchetes ni cite fuentes.
+
+<context>
+{{CONTEXT}}
+</context>
+
+Pregunta del cliente: {{QUERY}}
+```
+
 ## Versiones del prompt
 
 | Versión | Cambio | Resultado en la evaluación |
 |---|---|---|
-| v1 | Prompt inicial con 8 políticas | Pendiente de la primera corrida |
+| v1 | Prompt inicial con 8 políticas | Cumple seguridad y alcance; falla en datos concretos (por ejemplo, el horario del Premium) |
+| v2 (descartada) | v1 más una regla para no mezclar planes y un rechazo fijo fuera de tema | No mejoró los datos y añadió un rechazo innecesario a la falla crítica |
 
 Si la evaluación (Integrante 5) encuentra fallas, se ajusta el prompt como v2, se anota aquí y se
 vuelve a correr. La comparación v1 contra v2 va en el informe.
 
 ## Capturas
 
-Pendientes, en `../evidencias/interfaz/`: `03-modelo-general.png`, `04-modelo-parametros.png`.
+En `../evidencias/interfaz/`: `03-modelo-general.png`, `03b-modelo-conocimiento.png`, `04-modelo-parametros.png` y `04b-modelo-parametros.png`.
