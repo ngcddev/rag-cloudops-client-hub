@@ -66,7 +66,7 @@ commits desde la cuenta de cada quien.
 | Integrante | Usuario | Aporte |
 |---|---|---|
 | Integrante 1 · Nicolás Gaviria | @ngcddev | Repositorio, flujo de trabajo, entorno Docker (Ollama + Open WebUI), prueba por API, integración del informe |
-| Integrante 2 | @Mesiahs | Servicio propuesto, base de conocimiento y estrategia de corte |
+| Integrante 2 · Eric Mesias | @Mesiahs | Servicio propuesto, base de conocimiento y estrategia de corte |
 | Integrante 3 | @sebastianpaja-debug | Modelo personalizado, system prompt, políticas e hiperparámetros |
 | Integrante 4 | @yiselandrea13 | Golden dataset |
 | Integrante 5 | @Andres-Duqu | Evaluación de las pruebas, métricas y análisis de resultados |
