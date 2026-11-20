@@ -65,6 +65,7 @@ Copy-Item .env.example .env
 docker compose up -d
 docker exec -it ollama-rag-cloudops ollama pull qwen2.5:3b-instruct
 docker exec -it ollama-rag-cloudops ollama pull qwen2.5:7b-instruct
+docker exec -it ollama-rag-cloudops ollama pull bge-m3
 ```
 
 Abrir http://localhost:3000 y crear tu usuario (el primero que se crea queda como administrador).

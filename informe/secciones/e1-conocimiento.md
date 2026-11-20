@@ -2,42 +2,48 @@
 
 ## Contenido de la base
 
-Se prepararon seis documentos Markdown en español y dirigidos a los clientes de Forja Digital:
+Se prepararon seis documentos Markdown en español, dirigidos a los clientes de Forja Digital:
 
 1. `01-planes-y-horarios.md`: disponibilidad mensual y horarios de los planes.
 2. `02-prioridades-y-tiempos.md`: significado de P1–P4 y tiempos de respuesta y solución.
 3. `03-estados-de-solicitudes.md`: estados de solicitudes, incidentes, cambios y sitios.
-4. `04-glosario-para-clientes.md`: explicación de avisos del portal en lenguaje de cliente.
-5. `05-politica-pqrs.md`: tipos de PQRS y orientación para su seguimiento.
+4. `04-glosario-para-clientes.md`: explicación de los avisos del portal en lenguaje de cliente.
+5. `05-politica-pqrs.md`: tipos de PQRS, canal, información requerida, plazos y seguimiento.
 6. `06-preguntas-frecuentes.md`: 20 preguntas frecuentes con sus respuestas.
 
-El contenido se elaboró a partir de los documentos del proyecto sobre planes, prioridades, glosario y proceso de atención. Los canales y plazos de PQRS que no constan en esas fuentes están identificados como `[PROPUESTA]`; deben revisarse antes de comunicarlos como política vigente.
+El contenido se elaboró a partir de los documentos del proyecto CloudOps Client Hub sobre planes,
+prioridades, glosario y proceso de atención, reescritos sin jerga técnica. La política de PQRS
+(canal y plazos) se definió para este servicio y es coherente con los tiempos de las prioridades.
+
+Cada documento se escribió pensando en el corte: un título por documento y secciones `##` cortas,
+cada una con **un solo tema** y **autocontenida** (repite el dato completo en vez de remitir a
+otra sección). Así, cualquier trozo recuperado basta por sí solo para responder.
 
 ## Carga en Open WebUI
 
-La captura confirma que los seis archivos aparecen cargados en una base de conocimiento de Open WebUI. El nombre que se ve es `rag-cloudops`, en lugar del nombre sugerido en la guía (`base-soporte-forja`). La captura no muestra claramente la configuración de visibilidad, por lo que este informe no afirma que la base esté configurada como pública.
+Los seis archivos se cargaron en una base de conocimiento de Open WebUI (*Espacio de trabajo →
+Conocimiento*), que luego se vincula al modelo personalizado.
 
 ![Archivos cargados en la base de conocimiento](../../evidencias/interfaz/01-base-de-conocimiento.png)
 
-## Configuración de fragmentación
+## Estrategia de corte
 
-La captura de ajustes muestra el divisor de texto `Token (Tiktoken)`, un tamaño de fragmento de 500 y una superposición de 50. También se ve activado el divisor por encabezados Markdown. La pantalla muestra el proveedor de incrustaciones Ollama y la dirección base `http://ollama-rag-lab:11434`; no se alcanza a identificar el nombre del modelo de incrustaciones ni se ve el ajuste Top K.
+| Parámetro | Valor | Justificación |
+|---|---|---|
+| Divisor de texto | Token (Tiktoken) | El corte se mide en tokens, la misma unidad del modelo |
+| División por encabezados Markdown | Activada | Cada sección `##` queda como un trozo de un solo tema |
+| Tokens de corte (chunk size) | **500** | Techo por trozo; la sección más larga mide 141 tokens, así que ninguna se parte |
+| Tokens de solapamiento (overlap) | **50** (10 %) | Si una sección supera 500 tokens, evita cortar un dato a la mitad |
+| Top K | 4 | Cubre preguntas que necesitan 1 o 2 secciones, con margen, en unos 560 tokens de contexto |
+| Embeddings | Ollama · `bge-m3` | Local y multilingüe: relaciona preguntas en español con distintas palabras |
 
-El tamaño de 500 tokens busca conservar suficiente contexto para explicar cada tema sin formar fragmentos demasiado extensos. La superposición de 50 tokens conserva parte del contexto entre fragmentos contiguos para reducir el riesgo de separar una explicación o dato relacionado. Separar por encabezados Markdown ayuda a respetar los temas definidos en cada documento. La guía indica volver a cargar los documentos después de cambiar estos ajustes; las capturas disponibles no permiten confirmar si esa recarga se realizó.
+![Ajustes de corte en Open WebUI: Tiktoken, 500 y 50 tokens, división por encabezados](../../evidencias/interfaz/02-ajustes-de-corte.png)
 
-![Ajustes de fragmentación guardados en Open WebUI](../../evidencias/interfaz/02-ajustes-de-corte.png)
+La base suma **3.367 tokens** en **62 secciones** (promedio de 53 tokens por sección), medidos con
+Tiktoken. Como las secciones son cortas y de un tema, la división por encabezados produce unos 62
+trozos coherentes. El valor de 500 tokens actúa como techo de seguridad si un documento crece. Con
+4 trozos recuperados, el system prompt (404 tokens) y la respuesta (400), cada consulta usa unos
+1.700 tokens, dentro de la ventana de 4.096 del modelo.
 
-## Observación de una respuesta de prueba
-
-En la captura de una conversación de prueba, Open WebUI indica que recuperó tres fuentes. Sin embargo, la respuesta describe Top-K como si fuera una matriz de prioridades basada en impacto, urgencia, complejidad y tiempo. Esa explicación no corresponde a la configuración de recuperación indicada para la actividad: Top K establece cuántos fragmentos se recuperan para responder. Por tanto, la captura sirve para documentar una prueba y detectar una respuesta incorrecta, no para demostrar que la respuesta del asistente fue correcta. Se requiere corregir el comportamiento del modelo y repetir la prueba con preguntas y respuestas esperadas antes de considerar validada la calidad del RAG.
-
-![Respuesta preliminar de prueba que requiere corrección](../../evidencias/interfaz/03-tabla.png)
-
-## Pendientes de validación
-
-- Confirmar si la base debe renombrarse `base-soporte-forja` y verificar su visibilidad.
-- Confirmar el valor Top K en la configuración de recuperación; no queda visible en la captura de ajustes.
-- Registrar el nombre exacto del modelo de incrustaciones de Ollama.
-- Confirmar que los seis documentos se volvieron a cargar después de guardar los ajustes de fragmentación.
-- Revisar y aprobar las propuestas de canales y plazos de PQRS.
-- Corregir la respuesta errónea observada y ejecutar pruebas de recuperación con resultados esperados antes de reportar eficacia.
+El detalle por documento y las variantes previstas para comparar están en
+[`conocimiento/estrategia-de-corte.md`](../../conocimiento/estrategia-de-corte.md).

@@ -8,25 +8,25 @@ Una petición es una solicitud de información, servicio, atención o trámite. 
 
 La PQRS debe incluir una descripción clara del asunto, el servicio o solicitud relacionado y los datos necesarios para identificar al cliente y darle seguimiento.
 
-## [PROPUESTA] Canal principal para radicar una PQRS
+## Canal para radicar una PQRS
 
-La PQRS puede radicarla el cliente por el canal oficial que tenga habilitado la agencia, o por el proceso de atención del portal. La agencia debe registrar la PQRS como una solicitud con identificador y estado.
+El cliente radica la PQRS en el portal de clientes de Forja Digital, abriendo una solicitud e indicando si es petición, queja, reclamo o sugerencia. Forja Digital registra cada PQRS como una solicitud con número de identificación y estado, para que el cliente pueda consultar su avance en el portal.
 
-## [PROPUESTA] Información recomendada al radicar
+## Información para radicar una PQRS
 
-Al radicar una PQRS, conviene indicar el nombre del cliente, el tipo de solicitud, una descripción del asunto, la fecha y hora en que ocurrió y cualquier evidencia disponible. Esta propuesta necesita revisión antes de convertirse en una regla oficial.
+Al radicar una PQRS, el cliente indica el nombre de su empresa, el tipo de PQRS (petición, queja, reclamo o sugerencia), una descripción del asunto, la fecha y hora en que ocurrió y cualquier evidencia disponible, como capturas de pantalla.
 
-## [PROPUESTA] Plazo de respuesta
+## Plazo de respuesta de una PQRS
 
-Se propone confirmar la recepción de la PQRS dentro de 1 día hábil y dar una respuesta inicial después de revisar el caso. Este plazo no está definido en las fuentes actuales y debe ser aprobado por la agencia.
+Forja Digital confirma la recepción de una PQRS dentro de 1 día hábil. La confirmación incluye el número de la solicitud y la prioridad asignada.
 
-## [PROPUESTA] Plazo de solución
+## Plazo de solución de una PQRS
 
-Se propone resolver o informar el avance de una PQRS según el impacto y la prioridad. Si no puede resolverse inmediatamente, se propone mantener informado al cliente hasta que exista una decisión o resultado. Estos plazos no están definidos en las fuentes y requieren aprobación.
+La PQRS se resuelve según la prioridad asignada por impacto y urgencia, con los mismos tiempos de las solicitudes: P1 en 4 horas, P2 en 8 horas, P3 en 24 horas y P4 en 72 horas. Si no puede resolverse de inmediato, Forja Digital informa al cliente el avance hasta que exista una decisión o resultado.
 
 ## Seguimiento de la PQRS
 
-La PQRS debe tener un estado visible y una historia única del caso. El estado puede ser abierto, en progreso, en espera, resuelto o cerrado, según el tipo de atención.
+La PQRS tiene un estado visible en el portal y una historia única del caso. El estado puede ser abierto, en progreso, en espera, resuelto o cerrado.
 
 ## Cierre de la PQRS
 

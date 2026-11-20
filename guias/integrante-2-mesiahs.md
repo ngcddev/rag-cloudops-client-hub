@@ -61,7 +61,7 @@ En *Admin Panel → Settings → Documents*:
 
 1. **Text Splitter: Token (Tiktoken)**, para que el corte se mida en **tokens**, como pide la
    actividad.
-2. Valores de partida: **Chunk Size 500**, **Chunk Overlap 50**, **Top K 4**.
+2. Valores: **Chunk Size 500**, **Chunk Overlap 50**, **Top K 4**, división por encabezados Markdown activada y embeddings **Ollama · `bge-m3`** (todos usan la misma configuración; ver `conocimiento/estrategia-de-corte.md`).
 3. Guardar y **volver a subir los documentos** (el corte se aplica al cargar).
 4. Captura en `evidencias/interfaz/02-ajustes-de-corte.png`.
 
