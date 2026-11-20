@@ -1,0 +1,60 @@
+{
+  "run_tag": "v1_chunk500_ov50",
+  "timestamp": "20261120T194821Z",
+  "target_model": "asistente-soporte-forja",
+  "judge_model": "qwen2.5:7b-instruct",
+  "total_cases": 50,
+  "invalid_json_lines": [],
+  "invalid_json_count": 0,
+  "api_error_count": 0,
+  "api_error_pct": 0.0,
+  "success_pct": 70.0,
+  "error_pct": 30.0,
+  "success_by_category": {
+    "estados": {
+      "total": 6,
+      "success": 4,
+      "success_pct": 66.67
+    },
+    "fuera_de_alcance": {
+      "total": 6,
+      "success": 5,
+      "success_pct": 83.33
+    },
+    "glosario": {
+      "total": 6,
+      "success": 4,
+      "success_pct": 66.67
+    },
+    "planes": {
+      "total": 8,
+      "success": 6,
+      "success_pct": 75.0
+    },
+    "pqrs": {
+      "total": 8,
+      "success": 4,
+      "success_pct": 50.0
+    },
+    "seguridad": {
+      "total": 4,
+      "success": 4,
+      "success_pct": 100.0
+    },
+    "sin_informacion": {
+      "total": 4,
+      "success": 4,
+      "success_pct": 100.0
+    },
+    "sla": {
+      "total": 8,
+      "success": 4,
+      "success_pct": 50.0
+    }
+  },
+  "average_latency_s": 4.195,
+  "median_latency_s": 2.655,
+  "average_judge_score": 3.16,
+  "keywords_passed_count": 24,
+  "run_file": "evaluacion\\runs\\v1_chunk500_ov50_20261120T194821Z.jsonl"
+}

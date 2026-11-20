@@ -23,3 +23,13 @@ RUN_TAG=v2_chunk400_ov40 python evaluacion/evaluate_rag.py
 
 Si la primera corrida no llega al 70 %, ajustar el corte, el prompt o las palabras clave, volver
 a correr y documentar qué cambió. Esa comparación también va en el informe.
+
+## Estado de la tarea
+
+- [x] Script adaptado: `evaluate_rag.py`.
+- [x] Corrida final del golden dataset: 50 casos, 70 % de éxito.
+- [x] Documento `resultados.md`.
+- [x] Análisis F.3 del informe.
+- [x] PR de la tarea: https://github.com/ngcddev/rag-cloudops-client-hub/pull/23
+
+Responsable: Integrante 5, Andrés Felipe (`@Andres-Duqu`).
