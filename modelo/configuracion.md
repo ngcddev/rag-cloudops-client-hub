@@ -53,4 +53,4 @@ vuelve a correr. La comparación v1 contra v2 va en el informe.
 
 ## Capturas
 
-Pendientes, en `../evidencias/interfaz/`: `03-modelo-general.png`, `04-modelo-parametros.png`.
+En `../evidencias/interfaz/`: `03-modelo-general.png`, `03b-modelo-conocimiento.png`, `04-modelo-parametros.png` y `04b-modelo-parametros.png`.
