@@ -3,7 +3,9 @@
 **Asistente de soporte y PQRS para los clientes de Forja Digital**
 
 Diplomado CloudForge AI 5.0 · Módulo 6 · Actividad 2: Servicio de IA generativa para el proyecto
+
 Docente: Diego Fernando Rivera Vásquez
+
 Unicomfacauca · Noviembre de 2026
 
 ## Equipo
