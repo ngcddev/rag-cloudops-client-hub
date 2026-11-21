@@ -74,9 +74,10 @@ corridas. Actualiza también la sección "Resultados" del README principal.
 
 ## Terminado cuando
 
-- [ ] `evaluate_rag.py` adaptado en `main`
-- [ ] Corrida de 50 o más casos en `runs/` con eficiencia de 70 % o más
-- [ ] `resultados.md`, sección Resultados del README y sección F.3 del informe
+- [x] `evaluate_rag.py` adaptado en la rama `integrante-5-andres.md` [Andres]
+- [x] Corrida de 50 casos en `runs/` con eficiencia de 70 % exactos [Andres]
+- [x] `resultados.md`, sección Resultados del README y sección F.3 del informe [Andres]
+- [x] PR final de todas las tareas: https://github.com/ngcddev/rag-cloudops-client-hub/pull/23 [Andres]
 
 ## Prompt para tu IA
 
