@@ -41,3 +41,24 @@ o el cierre de una solicitud.
 
 Los tres peores casos fueron `planes-03`, `sla-01` y `estados-03`, con puntaje 1 del juez.
 No hubo errores de API en la corrida válida.
+
+## Segunda corrida (v2) y comparación
+
+Con el mismo golden dataset y el mismo juez se repitió la evaluación con el contexto de la base
+realmente inyectado (Function Calling en Legacy) y embeddings `bge-m3` (detalle en
+`evaluacion/resultados.md`):
+
+| Métrica | v1 (`v1_chunk500_ov50`) | v2 (`v2_bge-m3_legacy`) |
+|---|---|---|
+| Porcentaje de éxito | 70,00 % | **96,00 %** |
+| Porcentaje de error | 30,00 % | **4,00 %** |
+| Casos que aprobaron palabras clave | 24 | 44 |
+| Puntaje promedio del juez | 3,16 | 4,22 |
+| Latencia promedio / mediana | 4,195 s / 2,655 s | 2,485 s / 1,587 s |
+
+La mejora de 26 puntos viene de la recuperación, no del modelo: el prompt, los documentos y el modelo
+base son los mismos. Todas las categorías con datos de la base llegan a 100 %, salvo SLA (87,5 %).
+Los dos fallos restantes son `sla-08` y `sin-03`; este último es una invención (el modelo ofreció una
+compensación que no existe), el riesgo más importante de un asistente RAG y el primer punto a corregir
+en una versión siguiente, por ejemplo con una política más estricta contra datos que no estén en el
+contexto.

@@ -56,6 +56,10 @@ La primera corrida válida ejecutó 50 casos con el modelo `asistente-soporte-fo
 clave y promedio del juez de **3.16**. La latencia promedio fue **4.195 s** y la mediana
 **2.655 s**.
 
+Una segunda corrida (`v2_bge-m3_legacy`), con el contexto de la base realmente inyectado y
+embeddings `bge-m3`, llegó a **96.00 % de éxito** (**4.00 % de error**), 44 casos aprobados por
+palabras clave, juez de **4.22** y latencia promedio de **2.485 s**.
+
 La documentación completa y las métricas por categoría están en
 [`evaluacion/resultados.md`](evaluacion/resultados.md). Los archivos JSONL y JSON de las corridas
 quedan en [`evaluacion/runs/`](evaluacion/runs/).
