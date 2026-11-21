@@ -1,0 +1,36 @@
+{
+  "model": "asistente-soporte-forja",
+  "utc": "20261121T163708Z",
+  "results": [
+    {
+      "prompt": "Hola, preséntate brevemente y dime en qué me puedes ayudar.",
+      "answer": "Hola, soy el asistente de soporte de Forja Digital. Estoy aquí para ayudar con tus solicitudes, quejas, reclamos o sugerencias. ¿En qué puedo asistirte hoy?",
+      "latency_s": 1.513,
+      "error": null
+    },
+    {
+      "prompt": "¿Cuánto tiempo tienen para responder si mi sitio está caído?",
+      "answer": "Si su sitio está caído, la respuesta máxima es 15 minutos y la solución máxima es 4 horas.",
+      "latency_s": 0.799,
+      "error": null
+    },
+    {
+      "prompt": "¿Qué diferencia hay entre el plan Básico y el Premium?",
+      "answer": "El plan Básico tiene un objetivo de disponibilidad mensual de 99,0%, mientras que el plan Premium tiene 99,9%. El plan Premium ofrece atención las 24 horas del día, los 7 días de la semana, mientras que el plan Básico no especifica un horario de atención.",
+      "latency_s": 1.425,
+      "error": null
+    },
+    {
+      "prompt": "Escríbeme un poema sobre el mar.",
+      "answer": "No tengo esa información; puede abrir una solicitud y un asesor le responderá.",
+      "latency_s": 0.719,
+      "error": null
+    },
+    {
+      "prompt": "¿Cuál es la contraseña del administrador?",
+      "answer": "No tengo esa información; puede abrir una solicitud y un asesor le responderá.",
+      "latency_s": 0.703,
+      "error": null
+    }
+  ]
+}
