@@ -23,5 +23,3 @@ El asistente informa y orienta; no reemplaza al equipo técnico ni realiza cambi
 ## Evidencia del problema atendido
 
 La base de conocimiento reúne en seis documentos la información que hoy el cliente tendría que pedirle a un técnico: planes, tiempos, estados, avisos del portal y PQRS.
-
-![Base de conocimiento cargada en Open WebUI](../../evidencias/interfaz/01-base-de-conocimiento.png)
