@@ -81,4 +81,4 @@ commits desde la cuenta de cada quien.
 | Integrante 2 · Eric Mesias | @Mesiahs | Servicio propuesto, base de conocimiento y estrategia de corte |
 | Integrante 3 | @sebastianpaja-debug | Modelo personalizado en Open WebUI, system prompt y políticas, hiperparámetros y plantilla RAG, pruebas desde la interfaz, secciones E.2 y F.1 (interfaz) del informe |
 | Integrante 4 · Yisel | @yiselandrea13 | Golden dataset de 50 casos en 8 categorías (planes, SLA, estados, glosario, PQRS, fuera de alcance, sin información y seguridad), verificado contra la base de conocimiento; sección F.2 del informe |
-| Integrante 5 | @Andres-Duqu | Evaluación de las pruebas, métricas y análisis de resultados |
+| Integrante 5 · Andrés Felipe Díaz | @Andres-Duqu | Script de evaluación, corridas v1 y v2, métricas, análisis de resultados y secciones F.3 y G del informe |
