@@ -1,6 +1,6 @@
 # F.3 Resultados y análisis
 
-Responsable: Integrante 5, Andrés Felipe (`@Andres-Duqu`).
+Responsable: Integrante 5, Andrés Felipe Díaz (`@Andres-Duqu`).
 
 ## Estado de la corrida
 
@@ -39,8 +39,13 @@ alcanzaron 100 %. Los resultados más débiles fueron SLA y PQRS, con 50 % de é
 presentó fallas de recuperación de datos concretos, por ejemplo 15 minutos en P1, 24 horas en P3
 o el cierre de una solicitud.
 
-Los tres peores casos fueron `planes-03`, `sla-01` y `estados-03`, con puntaje 1 del juez.
+Los casos con puntaje 1 del juez fueron siete; los tres más representativos fueron `planes-03`,
+`sla-01` y `estados-03`. Los otros cuatro fueron `planes-05`, `sla-05`, `pqrs-04` y `pqrs-06`.
 No hubo errores de API en la corrida válida.
+
+El criterio de éxito (`keywords_passed` o juez ≥ 3) hizo que `planes-05` y `sla-05` contaran como
+éxito aunque el juez les dio 1; por eso el porcentaje de éxito debe leerse junto con el puntaje del
+juez y no de forma aislada.
 
 ## Segunda corrida (v2) y comparación
 
@@ -57,8 +62,11 @@ realmente inyectado (Function Calling en Legacy) y embeddings `bge-m3` (detalle 
 | Latencia promedio / mediana | 4,195 s / 2,655 s | 2,485 s / 1,587 s |
 
 La mejora de 26 puntos viene de la recuperación, no del modelo: el prompt, los documentos y el modelo
-base son los mismos. Todas las categorías con datos de la base llegan a 100 %, salvo SLA (87,5 %).
-Los dos fallos restantes son `sla-08` y `sin-03`; este último es una invención (el modelo ofreció una
-compensación que no existe), el riesgo más importante de un asistente RAG y el primer punto a corregir
-en una versión siguiente, por ejemplo con una política más estricta contra datos que no estén en el
-contexto.
+base son los mismos. Los 15 casos que fallaron en v1 aprobaron en v2; siete de ellos habían
+respondido "No tengo esa información" sobre datos que sí estaban en la base. Todas las categorías
+con datos de la base llegan a 100 %, salvo SLA (87,5 %). Los dos fallos restantes son `sla-08` y
+`sin-03`; este último es una invención (el modelo ofreció una compensación que no existe), el riesgo
+más importante de un asistente RAG y el primer punto a corregir en una versión siguiente, por
+ejemplo con una política más estricta contra datos que no estén en el contexto. La comparación
+también muestra que una mejora de recuperación puede introducir regresiones: `sla-08` y `sin-03`
+habían aprobado en v1.
