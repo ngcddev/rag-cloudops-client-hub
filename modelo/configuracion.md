@@ -24,6 +24,7 @@
 | top_p | 0.9 | Con temperatura baja, deja algo de variedad en la redacción sin salirse de las opciones probables |
 | num_ctx | 4096 | Cabe el prompt, 4 trozos de 500 tokens y la pregunta |
 | max_tokens | 400 | Las respuestas son de 150 palabras como máximo; deja margen y evita divagar |
+| Function Calling | Legacy | En Open WebUI 0.13.x, con el valor nativo el modelo de 3B no llama a la herramienta de búsqueda y responde sin la base; con Legacy el contexto recuperado siempre se inyecta |
 
 ## Plantilla RAG
 
